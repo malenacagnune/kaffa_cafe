@@ -240,3 +240,18 @@ input, select{
     justify-content: center;
     display: flex !important;
 }
+
+
+
+/* Mediaqueries */
+@media (min-width: 576px){
+    
+}
+
+@media (min-width: 768px){
+    
+}
+
+@media (min-width: 1024px){
+    
+}
