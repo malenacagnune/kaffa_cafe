@@ -156,6 +156,14 @@ input, select{
 
 
 /* Section elements */
+#body_index_id{
+    background-image: url(../img/inicio-cafe-estudio-1.jpg);
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .col-2{
     float: left;
     width: 50%;
