@@ -1,0 +1,234 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Parisienne&family=Raleway:wght@300;400&display=swap');
+
+
+
+/* General distribution */
+body{
+    position: relative;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    background-color: #FCFCFC;
+}
+
+section{
+    padding: 5px;
+    margin: 5px;
+}
+
+
+
+/* Typography hierarchy */
+.title{
+    font-family: 'Lora', serif;
+    font-size: 20px;
+}
+
+.subtitle{
+    font-family: 'Raleway', sans-serif; 
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.paragraph{
+    font-family: 'Raleway', sans-serif; 
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.active{
+    color:#59895F;
+    text-decoration: underline;
+}
+
+.decorative-text{
+    font-family: 'Parisienne', cursive;
+}
+
+
+
+/* Navigation */
+ul{
+    list-style-type: none;
+}
+
+.topnav{
+    overflow: hidden;
+    background-color: #333;
+}
+
+.topnav a {
+    float:left;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #59895F;
+    color: white;
+}
+
+footer{
+    overflow: hidden;
+    background-color: #C68254;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footernav{
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+}
+
+.footer-column{
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+i{
+    font-size: 25px;
+}
+
+
+
+/* Button */
+.primary-button{
+    padding: 5px;
+    background-color: #59895F;
+    color: white;
+    border-radius: 5px;
+    width: fit-content;
+    border: none;
+}
+
+.primary-button:hover{
+    opacity: 0.7;
+}
+
+.merch-card button {
+    padding: 12px;
+    background-color: #F6BC5E;
+    color: white;
+    border-radius: 5px;
+    width: 100%;
+    border: none;
+    outline: 0;
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.merch-card button:hover {
+    opacity: 0.7;
+}
+
+
+
+/* Input */
+input, select{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+
+
+/* Section elements */
+.col-2{
+    float: left;
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    display: flex !important;
+    height: 85vh;
+}
+
+.col-2-text{
+    margin-left: 50px;
+}
+
+.col-4{
+    float: left;
+    width: 30%;
+    padding: 10px;
+    box-sizing: border-box;
+    align-items: center;
+    display: flex !important;
+    height: 85vh;
+    justify-content: center;
+}
+
+.col-6{
+    float: left;
+    width: 70%;
+    padding: 10px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    display: flex !important;
+    height: 85vh;
+}
+
+.menu-section{
+    justify-content: center; 
+    display: flex;
+}
+
+.merch-card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.merch-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+    padding: 2px 16px;
+}
+
+.merch-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    height: auto;
+    margin: 10px;
+    text-align: center;
+    padding: 5px;
+}
+
+.price {
+    color: #59895F;
+    margin: 10px;
+}
+
+
+
+/* Alignments  */
+.justify-content-center{
+    justify-content: center;
+    display: flex !important;
+}
