@@ -247,16 +247,47 @@ input, select{
 }
 
 
+/* Grids */
+/* Nosotros */
+.nosotros-text{
+    grid-area: nosotros-text;
+}
+
+.nosotros-image{
+    grid-area: nosotros-image;
+}
+
+.grid-nosotros{
+    display: grid !important;
+    grid-template-areas: 
+    "nosotros-text" "nosotros-image";
+    width: 100%;
+    }
+
 
 /* Mediaqueries */
 @media (min-width: 576px){
-   
+    .grid-nosotros{
+    display: grid !important;
+    grid-template-areas: 
+    "nosotros-text"
+    "nosotros-image";
+    }
 }
 
 @media (min-width: 768px){
-    
+    .grid-nosotros{
+        display: grid !important;
+        grid-template-areas: 
+        "nosotros-text"
+        "nosotros-image";
+        }
 }
 
 @media (min-width: 1024px){
-    
+    .grid-nosotros{
+        display: grid !important;
+        grid-template-areas: 
+        "nosotros-text" "nosotros-image";
+        }
 }
