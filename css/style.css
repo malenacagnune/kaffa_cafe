@@ -247,6 +247,7 @@ input, select{
 }
 
 
+
 /* Grids */
 /* Nosotros */
 .nosotros-text{
@@ -264,6 +265,24 @@ input, select{
     width: 100%;
     }
 
+/* Menu */
+.menu-image{
+    grid-area: menu-image;
+}
+
+.menu-button{
+    grid-area: menu-button;
+}
+
+.grid-menu{
+    display: grid !important;
+    grid-template-areas: 
+    "menu-image"
+    "menu-button";
+    width: 100%;
+    }
+
+
 
 /* Mediaqueries */
 @media (min-width: 576px){
@@ -272,6 +291,19 @@ input, select{
     grid-template-areas: 
     "nosotros-text"
     "nosotros-image";
+    }
+
+    .grid-menu{
+        display: grid !important;
+        grid-template-areas: 
+        "menu-image"
+        "menu-button";
+        width: 100%;
+        margin-bottom: -75px;
+        }
+
+    #menu-img{
+        height: 90%;
     }
 }
 
@@ -282,6 +314,19 @@ input, select{
         "nosotros-text"
         "nosotros-image";
         }
+
+        .grid-menu{
+            display: grid !important;
+            grid-template-areas: 
+            "menu-image"
+            "menu-button";
+            width: 100%;
+            margin-bottom: -65px;
+            }
+
+        #menu-img{
+            height: 90%;
+        }
 }
 
 @media (min-width: 1024px){
@@ -289,5 +334,18 @@ input, select{
         display: grid !important;
         grid-template-areas: 
         "nosotros-text" "nosotros-image";
+        }
+
+        .grid-menu{
+            display: grid !important;
+            grid-template-areas: 
+            "menu-image"
+            "menu-button";
+            width: 100%;
+            margin-bottom: -65px;
+            }
+    
+        #menu-img{
+            height: 90%;
         }
 }
