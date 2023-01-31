@@ -1,0 +1,309 @@
+/* Reset */
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Parisienne&family=Raleway:wght@300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Fonts */
+/* General distribution */
+body {
+  position: relative;
+  min-height: 100vh;
+  flex-wrap: wrap;
+  background-color: #FCFCFC;
+}
+
+section {
+  padding: 5px;
+  margin: 5px;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: #F6BC5E;
+}
+
+/* Typography hierarchy */
+.title {
+  font-family: "Lora", serif;
+  font-size: 20px;
+}
+
+.subtitle {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.paragraph {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.active {
+  color: #59895F;
+  text-decoration: underline;
+}
+
+.decorative-text {
+  font-family: "Parisienne", cursive;
+}
+
+/* Navigation */
+ul {
+  list-style-type: none;
+}
+
+.bg-dark {
+  background-color: #333 !important;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.nav-link:hover {
+  background-color: #ddd;
+  color: black !important;
+}
+
+.active-link {
+  background-color: #59895F;
+  color: white;
+}
+
+footer {
+  overflow: hidden;
+  background-color: #C68254;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footernav {
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+}
+
+.footer-column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+i {
+  font-size: 25px;
+}
+
+/* Button */
+.btn-primary {
+  padding: 5px;
+  background-color: #59895F;
+  color: white;
+  border-radius: 5px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #59895F !important;
+  opacity: 0.7;
+}
+
+.merch-card button {
+  padding: 12px;
+  background-color: #F6BC5E;
+  color: white;
+  border-radius: 5px;
+  width: 100%;
+  border: none;
+  outline: 0;
+  text-align: center;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+}
+
+.merch-card button:hover {
+  opacity: 0.7;
+}
+
+/* Input */
+input, select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+/* Section elements */
+#body_index_id {
+  background-image: url(../img/inicio-cafe-estudio-1.jpg);
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.col-2 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  display: flex !important;
+  height: 85vh;
+}
+
+.col-2-text {
+  margin-left: 50px;
+}
+
+.col-4 {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  box-sizing: border-box;
+  align-items: center;
+  display: flex !important;
+  height: 85vh;
+  justify-content: center;
+}
+
+.col-6 {
+  float: left;
+  width: 70%;
+  padding: 10px;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  display: flex !important;
+  height: 85vh;
+}
+
+.menu-section {
+  justify-content: center;
+  display: flex;
+}
+
+.merch-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.merch-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.merch-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  height: auto;
+  margin: 10px;
+  text-align: center;
+  padding: 5px;
+}
+
+.price {
+  color: #59895F;
+  margin: 10px;
+}
+
+/* Alignments  */
+.justify-content-center {
+  justify-content: center;
+  display: flex !important;
+}
+
+/* Grids */
+/* Nosotros */
+.nosotros-text {
+  grid-area: nosotros-text;
+}
+
+.nosotros-image {
+  grid-area: nosotros-image;
+}
+
+.grid-nosotros {
+  display: grid !important;
+  grid-template-areas: "nosotros-text" "nosotros-image";
+  width: 100%;
+}
+
+/* Menu */
+.menu-image {
+  grid-area: menu-image;
+}
+
+.menu-button {
+  grid-area: menu-button;
+}
+
+.grid-menu {
+  display: grid !important;
+  grid-template-areas: "menu-image" "menu-button";
+  width: 100%;
+}
+
+/* Mediaqueries */
+@media (min-width: 576px) {
+  .grid-nosotros {
+    display: grid !important;
+    grid-template-areas: "nosotros-text" "nosotros-image";
+  }
+  .grid-menu {
+    display: grid !important;
+    grid-template-areas: "menu-image" "menu-button";
+    width: 100%;
+    margin-bottom: -75px;
+  }
+  #menu-img {
+    height: 90%;
+  }
+}
+@media (min-width: 768px) {
+  .grid-nosotros {
+    display: grid !important;
+    grid-template-areas: "nosotros-text" "nosotros-image";
+  }
+  .grid-menu {
+    display: grid !important;
+    grid-template-areas: "menu-image" "menu-button";
+    width: 100%;
+    margin-bottom: -65px;
+  }
+  #menu-img {
+    height: 90%;
+  }
+}
+@media (min-width: 1024px) {
+  .grid-nosotros {
+    display: grid !important;
+    grid-template-areas: "nosotros-text" "nosotros-image";
+  }
+  .grid-menu {
+    display: grid !important;
+    grid-template-areas: "menu-image" "menu-button";
+    width: 100%;
+    margin-bottom: -65px;
+  }
+  #menu-img {
+    height: 90%;
+  }
+}/*# sourceMappingURL=estilo.css.map */
