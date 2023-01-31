@@ -1,0 +1,48 @@
+/* Navigation */
+ul{
+    list-style-type: none;
+}
+
+.bg-dark{
+    background-color: #333 !important;
+}
+
+.nav-link{
+    color: white !important;
+}
+
+.nav-link:hover{
+    background-color: #ddd;
+    color: black !important;
+}
+
+.active-link{
+    background-color: #59895F;
+    color: white;
+}
+
+footer{
+    overflow: hidden;
+    background-color: #C68254;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footernav{
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+}
+
+.footer-column{
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+i{
+    font-size: 25px;
+}
