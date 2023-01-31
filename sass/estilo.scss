@@ -170,3 +170,19 @@ input, select{
     "menu-button";
     width: 100%;
     }
+
+/* Reservas */
+.reservas-form{
+    grid-area: reservas-form
+}
+
+.reservas-image{
+    grid-area: reservas-image;
+}
+
+.grid-reservas{
+    display: grid !important;
+    grid-template-areas: 
+    "reservas-form" "reservas-image" ;
+    width: 100%;
+    }

@@ -54,6 +54,70 @@ a:hover {
   font-family: "Parisienne", cursive;
 }
 
+/* Mediaqueries */
+@media (min-width: 576px) {
+  .grid-nosotros {
+    display: grid !important;
+    grid-template-areas: "nosotros-text" "nosotros-image";
+  }
+  .grid-menu {
+    display: grid !important;
+    grid-template-areas: "menu-image" "menu-button";
+    width: 100%;
+    margin-bottom: -75px;
+  }
+  #menu-img {
+    height: 90%;
+  }
+  .reservas-form {
+    width: 100% !important;
+  }
+  #img-reservas {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) {
+  .grid-nosotros {
+    display: grid !important;
+    grid-template-areas: "nosotros-text" "nosotros-image";
+  }
+  .grid-menu {
+    display: grid !important;
+    grid-template-areas: "menu-image" "menu-button";
+    width: 100%;
+    margin-bottom: -65px;
+  }
+  #menu-img {
+    height: 90%;
+  }
+  .grid-reservas {
+    display: grid !important;
+    grid-template-areas: "reservas-image" "reservas-form";
+    width: 100%;
+    margin-bottom: -75px;
+  }
+}
+@media (min-width: 1024px) {
+  .grid-nosotros {
+    display: grid !important;
+    grid-template-areas: "nosotros-text" "nosotros-image";
+  }
+  .grid-menu {
+    display: grid !important;
+    grid-template-areas: "menu-image" "menu-button";
+    width: 100%;
+    margin-bottom: -65px;
+  }
+  #menu-img {
+    height: 90%;
+  }
+  .grid-reservas {
+    display: grid !important;
+    grid-template-areas: "reservas-image" "reservas-form";
+    width: 100%;
+    margin-bottom: -75px;
+  }
+}
 /* Navigation */
 ul {
   list-style-type: none;
@@ -261,49 +325,17 @@ input, select {
   width: 100%;
 }
 
-/* Mediaqueries */
-@media (min-width: 576px) {
-  .grid-nosotros {
-    display: grid !important;
-    grid-template-areas: "nosotros-text" "nosotros-image";
-  }
-  .grid-menu {
-    display: grid !important;
-    grid-template-areas: "menu-image" "menu-button";
-    width: 100%;
-    margin-bottom: -75px;
-  }
-  #menu-img {
-    height: 90%;
-  }
+/* Reservas */
+.reservas-form {
+  grid-area: reservas-form;
 }
-@media (min-width: 768px) {
-  .grid-nosotros {
-    display: grid !important;
-    grid-template-areas: "nosotros-text" "nosotros-image";
-  }
-  .grid-menu {
-    display: grid !important;
-    grid-template-areas: "menu-image" "menu-button";
-    width: 100%;
-    margin-bottom: -65px;
-  }
-  #menu-img {
-    height: 90%;
-  }
+
+.reservas-image {
+  grid-area: reservas-image;
 }
-@media (min-width: 1024px) {
-  .grid-nosotros {
-    display: grid !important;
-    grid-template-areas: "nosotros-text" "nosotros-image";
-  }
-  .grid-menu {
-    display: grid !important;
-    grid-template-areas: "menu-image" "menu-button";
-    width: 100%;
-    margin-bottom: -65px;
-  }
-  #menu-img {
-    height: 90%;
-  }
+
+.grid-nosotros {
+  display: grid !important;
+  grid-template-areas: "reservas-form" "reservas-image";
+  width: 100%;
 }/*# sourceMappingURL=estilo.css.map */
